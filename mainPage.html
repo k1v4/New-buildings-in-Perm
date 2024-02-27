@@ -4,25 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="Main Page" content="width=device-width, initial-scale=1.0" />
     <title>Main Page</title>
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/main_window.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="main_window.css" />
   </head>
   <body>
-    <div class="first_part">
-      <header class="main-header">
-        <h1>Новостройки Перми</h1>
-        <div>+7-(342)-204-38-31</div>
-        <button>Позвоните мне</button>
-      </header>
-      <div class="nav-bar">
-        <ul>
-          <li><a href="#">покупка</a></li>
-          <li><a href="#">продажа</a></li>
-          <li><a href="#">оценка</a></li>
-          <li><a href="#">снять</a></li>
-          <li><a href="#">ипотека</a></li>
-        </ul>
+    <script src="script.js"></script>
+    <div class="container">
+      <div class="first_part">
+        <header class="main-header">
+          <h1>Новостройки<br />Перми</h1>
+          <div>+7-(342)-204-38-31</div>
+          <button class="first-part-btn" onclick="">Позвоните мне</button>
+        </header>
+        <div class="nav-bar">
+          <ul>
+            <li><a href="#">покупка</a></li>
+            <li><a href="#">продажа</a></li>
+            <li><a href="#">оценка</a></li>
+            <li><a href="#">снять</a></li>
+            <li><a href="#">ипотека</a></li>
+          </ul>
+        </div>
+        <div class="dream-apartment">
+          <h1>Купите квартиру<br />своей мечты!</h1>
+          <button class="first-part-btn">Оставить заявку</button>
+        </div>
+      </div>
+      <div class="second-part">
+        <div class="dream-apartment">
+          <h2>Наши лучшие предложения</h2>
+        </div>
+        <div class="slider"></div>
+      </div>
+      <hr />
+    </div>
+    <div class="third-part">
+      <div class="dream-apartment">
+        <h2>Почему мы?</h2>
+      </div>
+      <div class="list-container">
+        <div class="list-item">
+          <img src="images/Checkbox_Check.png" />
+          <div>Большой опыт работы на рынке недвижимости Перми.</div>
+        </div>
+        <div class="list-item">
+          <img src="images/Checkbox_Check.png" />
+          <div>Качественные и надежные постройки.</div>
+        </div>
+        <div class="list-item">
+          <img src="images/Checkbox_Check.png" />
+          <div>Индивидуальный подход к каждому клиенту.</div>
+        </div>
+        <div class="list-item">
+          <img src="images/Checkbox_Check.png" />
+          <div>Профессионализм наших сотрудников.</div>
+        </div>
+        <div class="list-item">
+          <img src="images/Checkbox_Check.png" />
+          <div>Гарантии и послепродажное обслуживание.</div>
+        </div>
       </div>
     </div>
+    <hr />
   </body>
 </html>
