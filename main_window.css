@@ -9,6 +9,7 @@
 
 hr {
   border: 1;
+  background-color: #000;
   height: 1px;
   margin: 1% 5% 1% 5%;
   box-sizing: content-box;
@@ -136,4 +137,37 @@ h2 {
 .photo-cut img {
   margin-bottom: 5px;
   padding: 0 25% 0 0;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 7%;
+}
+
+.nav-arrow {
+  margin: 0 0 5% 0;
+  display: flex;
+  align-items: center;
+}
+
+.elem-slider {
+  width: 30%;
+  border: 2px solid #000;
+  margin: 0 2%;
+}
+
+.elem-slider img {
+  width: 100%;
+}
+
+.price {
+  padding: 3%;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.slider-div {
+  display: flex;
+  align-items: center;
 }
