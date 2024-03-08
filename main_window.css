@@ -1,9 +1,13 @@
 .main-header {
-  padding: 2% 0%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   color: #ffffff;
+  font-size: 1.25rem;
+  padding: 2% 4%;
+}
+
+.phone-number {
   font-size: 1.25rem;
 }
 
@@ -79,7 +83,7 @@ hr {
 }
 
 .dream-apartment {
-  padding: 3% 10%;
+  padding: 3% 4%;
 }
 
 .dream-apartment h1 {
@@ -109,7 +113,7 @@ h2 {
 }
 
 .list-container {
-  padding: 0 10%;
+  padding: 0 4%;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -125,7 +129,7 @@ h2 {
 }
 
 .list-item img {
-  padding: 3vh;
+  padding: 0 4%;
 }
 
 .photo-cut {
@@ -137,7 +141,7 @@ h2 {
 
 .photo-cut img {
   margin-bottom: 6px;
-  padding: 0 25% 0 0;
+  padding: 0 15% 0 0;
 }
 
 .slider {
@@ -183,9 +187,78 @@ h2 {
 }
 
 .fifth-part {
-  height: 70vh;
+  height: 65vh;
+}
+
+.news-section {
+  margin-left: 5%;
+  margin-right: 4%;
+  display: flex;
+  height: 50%;
+}
+
+.news-content h3 {
+  font: bold;
+  font-size: 1.75rem;
+  padding: 0 0 2% 5%;
+}
+
+#text-news {
+  font-size: 1.3rem;
+  padding: 1% 0 5% 5%;
+  width: 50%;
+}
+
+.news-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+}
+
+#more-btn {
+  margin: 4% 0 0 0;
+}
+
+#date-news {
+  padding: 10% 0 5% 8%;
+  color: #505050;
+}
+
+#right-arrow-news {
+  margin-right: 3vh;
 }
 
 footer {
-  height: 30vh;
+  padding: 3% 0 3% 0;
+  margin-left: 4%;
+  margin-right: 4%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sm-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sm-icons img {
+  height: 48px;
+  width: 48px;
+  margin: 0 10%;
+}
+
+.footer-btn {
+  border: 1px solid #000000;
+  color: #000000;
+  font-size: 1.25rem;
+  background-color: #fff;
+  height: 6vh;
+}
+
+footer h1 {
+  color: #000;
+  font-size: 1.75rem;
+  padding: 0 1.2%;
 }
