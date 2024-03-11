@@ -225,7 +225,11 @@ h2 {
 }
 
 #right-arrow-news {
-  margin-right: 3vh;
+  margin-right: 4vh;
+}
+
+#left-arrow-news {
+  margin-left: 0;
 }
 
 footer {
