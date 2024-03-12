@@ -7,6 +7,8 @@ body {
   margin-right: 7%;
 }
 
+.nav-bar,
+footer,
 header {
   padding-top: 2%;
   width: 100%;
@@ -29,5 +31,90 @@ header {
   color: #000000;
   padding: 2vh;
   font-size: 1.25rem;
-  margin: 1%;
+}
+
+.container-paging {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 3px;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+}
+
+.pagination li {
+  flex: 1;
+  background: #ffffff;
+}
+
+.pagination li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #000000;
+  height: 40px;
+  width: 60px;
+  display: block;
+  line-height: 40px;
+  border-width: 1px;
+  border-color: #ccc;
+  border-style: solid;
+}
+
+hr {
+  border: 1;
+  background-color: #000;
+  height: 1px;
+  margin: 1% -1%;
+  box-sizing: content-box;
+  display: block;
+}
+
+.sm-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sm-icons img {
+  height: 48px;
+  width: 48px;
+  margin: 0 10%;
+}
+
+.footer-btn {
+  border: 1px solid #000000;
+  color: #000000;
+  font-size: 1.25rem;
+  background-color: #fff;
+  height: 6vh;
+}
+
+footer h1 {
+  color: #000;
+  font-size: 1.75rem;
+  padding: 0 0;
+}
+
+input {
+  margin: 0;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input.find-inp {
+  background-image: url('images/find.png'); /* Путь к изображению */
+  background-size: 15px; /* Размер изображения */
+  background-repeat: no-repeat;
+  background-position: right 1% center; /* Позиция изображения */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-container {
+  display: flex;
 }
