@@ -20,6 +20,10 @@ header {
   font-size: 1.25rem;
 }
 
+.nav-bar {
+  margin-bottom: 5%;
+}
+
 .main-header h1 {
   color: #000000;
   font-size: 2rem;
@@ -29,7 +33,7 @@ header {
   border: 1px solid #000000;
   background-color: rgba(28, 28, 28, 0);
   color: #000000;
-  padding: 2vh;
+  padding: 2.5vh;
   font-size: 1.25rem;
 }
 
@@ -101,20 +105,35 @@ footer h1 {
 
 input {
   margin: 0;
-  padding: 5px;
+  padding: 7px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 input.find-inp {
-  background-image: url('images/find.png'); /* Путь к изображению */
-  background-size: 15px; /* Размер изображения */
+  background-image: url('images/find.png');
+  background-size: 15px;
   background-repeat: no-repeat;
-  background-position: right 1% center; /* Позиция изображения */
+  background-position: right 1% center;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 .input-container {
   display: flex;
+}
+
+.input-container input {
+  max-width: 80px; /*Переделать */
+}
+
+.list-item {
+  border: 1px solid #000000;
+  padding: 2%;
+  height: 50vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.inscriptions {
 }
