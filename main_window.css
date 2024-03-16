@@ -4,7 +4,7 @@
   align-items: center;
   color: #ffffff;
   font-size: 1.25rem;
-  padding: 2% 4%;
+  padding: 2% 7%;
 }
 
 .phone-number {
@@ -22,7 +22,7 @@ hr {
 
 .main-header h1 {
   color: #fff;
-  padding: 2vh;
+  padding: 2vh 2vh 2vh 0;
   font-size: 2rem;
 }
 
