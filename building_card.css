@@ -57,14 +57,18 @@ header {
   margin: 0 -9vh;
 }
 
-.right-arrow {
+.nav-arrow {
+  margin: 0 0 5% 0;
   display: flex;
   align-items: center;
 }
 
+.right-arrow {
+  margin-right: 4vh;
+}
+
 .left-arrow {
-  display: flex;
-  align-items: center;
+  margin-left: 4vh;
 }
 
 .elem-slider {
