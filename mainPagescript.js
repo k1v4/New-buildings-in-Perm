@@ -26,6 +26,8 @@ let currentPhotoIndex3 = 2;
 let photo1, photo2, photo3;
 
 document.addEventListener('DOMContentLoaded', function () {
+  check_addres();
+
   const imageElementLeft = document.getElementById('left-arrow');
   const imageElementRight = document.getElementById('right-arrow');
 
@@ -58,6 +60,8 @@ document.addEventListener('DOMContentLoaded', function () {
     photo3.children[1].innerHTML = descriptions[currentPhotoIndex3];
     photo3.children[2].innerHTML = adresses[currentPhotoIndex3];
     photo3.children[3].innerHTML = prices[currentPhotoIndex3];
+
+    check_addres();
   };
 
   imageElementRight.onclick = function () {
@@ -83,5 +87,22 @@ document.addEventListener('DOMContentLoaded', function () {
     photo3.children[1].innerHTML = descriptions[currentPhotoIndex3];
     photo3.children[2].innerHTML = adresses[currentPhotoIndex3];
     photo3.children[3].innerHTML = prices[currentPhotoIndex3];
+
+    check_addres();
   };
+
+  function open_build() {
+    window.location.href = 'building_card.html';
+  }
+
+  function check_addres() {
+    var sliders = document.getElementsByClassName('elem-slider');
+    for (var i = 0; i < sliders.length; i++) {
+      if (sliders[i].children[2].innerHTML == 'ул. Мира, 102') {
+        sliders[i].addEventListener('click', open_build, false);
+      } else {
+        sliders[i].removeEventListener('click', open_build, false);
+      }
+    }
+  }
 });

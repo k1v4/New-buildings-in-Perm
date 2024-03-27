@@ -237,7 +237,7 @@ h2 {
 }
 
 #left-arrow-news {
-  margin-left: 0;
+  margin-left: 0vh;
 }
 
 footer {
@@ -270,4 +270,23 @@ footer {
 footer h1 {
   color: #000;
   font-size: 1.75rem;
+}
+
+.header-feedback {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-feedback .nav-arrow {
+  padding-top: 3%;
+}
+
+.slider-feedback {
+  display: grid;
+  grid-template-columns: 20%;
+  grid-template-rows: 30vh;
+}
+
+.feedback-elem {
+  border: 1px solid #000;
 }
