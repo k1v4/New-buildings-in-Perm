@@ -1,3 +1,11 @@
+body {
+  font-family: Montserrat;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
 .container {
   margin-left: 15vh;
   margin-right: 15vh;
@@ -277,16 +285,45 @@ footer h1 {
   justify-content: space-between;
 }
 
-.header-feedback .nav-arrow {
-  padding-top: 3%;
-}
-
-.slider-feedback {
-  display: grid;
-  grid-template-columns: 20%;
-  grid-template-rows: 30vh;
+.header-feedback h2 {
+  padding-top: 0;
 }
 
 .feedback-elem {
   border: 1px solid #000;
+  padding: 4vh;
+  margin: 1vh;
+}
+
+.profile-photo {
+  border-radius: 500px;
+  border: 1px solid #000000;
+  height: 80px;
+  margin: 0 2vh 1vh 0;
+}
+
+.feedback-elem-header {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.profile-name {
+  font-weight: normal;
+  font-size: 1.25rem;
+}
+
+.feedback-text {
+  margin-top: 1vh;
+  font-size: 1.1rem;
+  line-height: 4vh;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-slide {
+  height: 30vh;
+  width: 60vh;
 }

@@ -1,3 +1,22 @@
+$(document).ready(function () {
+  $('.slider-feedback').slick({
+    slidesPerRow: 3,
+    rows: 2,
+    slidesToShow: 6,
+    slidesToScroll: 6,
+    dots: false,
+    arrows: false,
+    infinity: false,
+    varibleWidth: true,
+  });
+});
+$('#left-arrow').on('click', function () {
+  $('.slider-feedback').slick('slickPrev');
+});
+$('#right-arrow').on('click', function () {
+  $('.slider-feedback').slick('slickNext');
+});
+
 const photos = [
   'images/slider1_photo1.png',
   'images/slider1_photo2.png',
@@ -99,8 +118,10 @@ document.addEventListener('DOMContentLoaded', function () {
     var sliders = document.getElementsByClassName('elem-slider');
     for (var i = 0; i < sliders.length; i++) {
       if (sliders[i].children[2].innerHTML == 'ул. Мира, 102') {
+        sliders[i].setAttribute('style', 'cursor: pointer;');
         sliders[i].addEventListener('click', open_build, false);
       } else {
+        sliders[i].setAttribute('style', 'default: pointer;');
         sliders[i].removeEventListener('click', open_build, false);
       }
     }

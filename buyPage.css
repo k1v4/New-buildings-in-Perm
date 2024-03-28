@@ -134,6 +134,7 @@ input.find-inp {
   flex-wrap: nowrap;
   margin: 2% 0;
   position: relative;
+  cursor: pointer;
 }
 
 .inscriptions {

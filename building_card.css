@@ -73,6 +73,7 @@ header {
 
 .elem-slider {
   width: 30%;
+  height: 50vh;
   border: 2px solid #000;
   margin: 0 2%;
 }
@@ -109,6 +110,7 @@ h3 {
 .specifications {
   height: 55vh;
   margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .gr {
@@ -143,6 +145,11 @@ h3 {
 .house-text {
   margin-left: 8vh;
   width: 100%;
+}
+
+.house-info img {
+  width: 25%;
+  height: 40vh;
 }
 
 .inf-table {
