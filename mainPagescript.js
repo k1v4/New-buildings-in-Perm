@@ -1,22 +1,3 @@
-$(document).ready(function () {
-  $('.slider-feedback').slick({
-    slidesPerRow: 3,
-    rows: 2,
-    slidesToShow: 6,
-    slidesToScroll: 6,
-    dots: false,
-    arrows: false,
-    infinity: false,
-    varibleWidth: true,
-  });
-});
-$('#left-arrow').on('click', function () {
-  $('.slider-feedback').slick('slickPrev');
-});
-$('#right-arrow').on('click', function () {
-  $('.slider-feedback').slick('slickNext');
-});
-
 const photos = [
   'images/slider1_photo1.png',
   'images/slider1_photo2.png',

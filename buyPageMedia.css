@@ -1,0 +1,15 @@
+@media (max-width: 2500px) {
+  .inscriptions h1,
+  h2,
+  h3,
+  p {
+    padding: 1% 0;
+  }
+}
+
+@media (max-width: 1380px) {
+  .container {
+    margin-left: 4vh;
+    margin-right: 4vh;
+  }
+}
