@@ -1,15 +1,167 @@
-@media (max-width: 2500px) {
+@media (max-width: 3000px) {
   .inscriptions h1,
   h2,
   h3,
   p {
-    padding: 1% 0;
+    padding: 0;
+  }
+
+  .container {
+    margin-top: 4vh;
+    margin-left: 15vh;
+    margin-right: 15vh;
   }
 }
 
-@media (max-width: 1380px) {
+@media (max-width: 1400px) {
   .container {
     margin-left: 4vh;
     margin-right: 4vh;
+  }
+
+  .list-img {
+    height: 90vh;
+    width: 90vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  .list-img {
+    height: 60vh;
+    width: 60vh;
+  }
+
+  .cell {
+    width: 50vh;
+  }
+}
+
+@media (max-width: 992px) {
+  th:nth-child(4),
+  td:nth-child(4) {
+    display: none;
+  }
+
+  .list-img {
+    height: 50vh;
+    width: 50vh;
+  }
+
+  .table {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 830px) {
+  .list-img {
+    height: 40vh;
+    width: 40vh;
+  }
+
+  th,
+  td {
+    padding: 7px 7px;
+  }
+
+  table {
+    bottom: 10%;
+  }
+
+  .cell {
+    width: 30vh;
+  }
+
+  .row:nth-child(n + 2) {
+    display: none;
+  }
+
+  th:nth-child(3),
+  td:nth-child(3) {
+    display: none;
+  }
+
+  footer .phone-number:nth-child(3),
+  footer .footer-btn:nth-child(4) {
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 670px) {
+  .row:nth-child(1) {
+    display: none;
+  }
+
+  html {
+    font-size: 14px;
+  }
+
+  .inscriptions h1,
+  h2,
+  h3,
+  p {
+    padding: 1%;
+  }
+
+  .list-img {
+    height: 37vh;
+    width: 37vh;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    height: 20vh;
+  }
+
+  footer h1:first-child {
+    display: none;
+  }
+
+  .sm-icons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sm-icons img {
+    margin: 0 5% 0 0;
+  }
+}
+
+@media (max-width: 540px) {
+  html {
+    font-size: 11px;
+  }
+
+  table {
+    display: none;
+  }
+
+  .list-img {
+    height: 30vh;
+    width: 30vh;
+  }
+}
+
+@media (max-width: 420px) {
+  .list-img {
+    height: 20vh;
+    width: 20vh;
+  }
+
+  .phone-number {
+    display: none;
+  }
+}
+
+@media (max-width: 335px) {
+  html {
+    font-size: 9px;
+  }
+
+  .pagination li:nth-child(4) {
+    display: none;
   }
 }
