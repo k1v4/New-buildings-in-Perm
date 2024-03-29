@@ -18,6 +18,8 @@ const adresses = [
 
 const prices = ['5 200 000 ₽', '7 800 000 ₽', '4 900 000 ₽'];
 
+const delay = 1200;
+
 const len = photos.length;
 let currentPhotoIndex1 = 0;
 let currentPhotoIndex2 = 1;
@@ -33,62 +35,69 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let test = document.querySelectorAll('.elem-slider');
 
-  photo1 = test[0];
   photo2 = test[1];
   photo3 = test[2];
 
   imageElementLeft.onclick = function () {
-    currentPhotoIndex1 = currentPhotoIndex2;
-    currentPhotoIndex2 = currentPhotoIndex3;
-    currentPhotoIndex3++;
+    add_class('animate', test);
+    setTimeout(() => {
+      currentPhotoIndex1 = currentPhotoIndex2;
+      currentPhotoIndex2 = currentPhotoIndex3;
+      currentPhotoIndex3++;
 
-    if (currentPhotoIndex3 > len - 1) {
-      currentPhotoIndex3 = 0;
-    }
+      if (currentPhotoIndex3 > len - 1) {
+        currentPhotoIndex3 = 0;
+      }
 
-    photo1.children[0].src = photos[currentPhotoIndex1];
-    photo1.children[1].innerHTML = descriptions[currentPhotoIndex1];
-    photo1.children[2].innerHTML = adresses[currentPhotoIndex1];
-    photo1.children[3].innerHTML = prices[currentPhotoIndex1];
+      test[0].children[0].src = photos[currentPhotoIndex1];
+      test[0].children[1].innerHTML = descriptions[currentPhotoIndex1];
+      test[0].children[2].innerHTML = adresses[currentPhotoIndex1];
+      test[0].children[3].innerHTML = prices[currentPhotoIndex1];
 
-    photo2.children[0].src = photos[currentPhotoIndex2];
-    photo2.children[1].innerHTML = descriptions[currentPhotoIndex2];
-    photo2.children[2].innerHTML = adresses[currentPhotoIndex2];
-    photo2.children[3].innerHTML = prices[currentPhotoIndex2];
+      photo2.children[0].src = photos[currentPhotoIndex2];
+      photo2.children[1].innerHTML = descriptions[currentPhotoIndex2];
+      photo2.children[2].innerHTML = adresses[currentPhotoIndex2];
+      photo2.children[3].innerHTML = prices[currentPhotoIndex2];
 
-    photo3.children[0].src = photos[currentPhotoIndex3];
-    photo3.children[1].innerHTML = descriptions[currentPhotoIndex3];
-    photo3.children[2].innerHTML = adresses[currentPhotoIndex3];
-    photo3.children[3].innerHTML = prices[currentPhotoIndex3];
+      photo3.children[0].src = photos[currentPhotoIndex3];
+      photo3.children[1].innerHTML = descriptions[currentPhotoIndex3];
+      photo3.children[2].innerHTML = adresses[currentPhotoIndex3];
+      photo3.children[3].innerHTML = prices[currentPhotoIndex3];
 
-    check_addres();
+      check_addres();
+      remove_class('animate', test);
+    }, delay);
   };
 
   imageElementRight.onclick = function () {
-    currentPhotoIndex3 = currentPhotoIndex2;
-    currentPhotoIndex2 = currentPhotoIndex1;
-    currentPhotoIndex1--;
+    add_class('animate', test);
+    setTimeout(() => {
+      currentPhotoIndex3 = currentPhotoIndex2;
+      currentPhotoIndex2 = currentPhotoIndex1;
+      currentPhotoIndex1--;
 
-    if (currentPhotoIndex1 < 0) {
-      currentPhotoIndex1 = len - 1;
-    }
+      if (currentPhotoIndex1 < 0) {
+        currentPhotoIndex1 = len - 1;
+      }
 
-    photo1.children[0].src = photos[currentPhotoIndex1];
-    photo1.children[1].innerHTML = descriptions[currentPhotoIndex1];
-    photo1.children[2].innerHTML = adresses[currentPhotoIndex1];
-    photo1.children[3].innerHTML = prices[currentPhotoIndex1];
+      test[0].children[0].src = photos[currentPhotoIndex1];
+      test[0].children[1].innerHTML = descriptions[currentPhotoIndex1];
+      test[0].children[2].innerHTML = adresses[currentPhotoIndex1];
+      test[0].children[3].innerHTML = prices[currentPhotoIndex1];
 
-    photo2.children[0].src = photos[currentPhotoIndex2];
-    photo2.children[1].innerHTML = descriptions[currentPhotoIndex2];
-    photo2.children[2].innerHTML = adresses[currentPhotoIndex2];
-    photo2.children[3].innerHTML = prices[currentPhotoIndex2];
+      photo2.children[0].src = photos[currentPhotoIndex2];
+      photo2.children[1].innerHTML = descriptions[currentPhotoIndex2];
+      photo2.children[2].innerHTML = adresses[currentPhotoIndex2];
+      photo2.children[3].innerHTML = prices[currentPhotoIndex2];
 
-    photo3.children[0].src = photos[currentPhotoIndex3];
-    photo3.children[1].innerHTML = descriptions[currentPhotoIndex3];
-    photo3.children[2].innerHTML = adresses[currentPhotoIndex3];
-    photo3.children[3].innerHTML = prices[currentPhotoIndex3];
+      photo3.children[0].src = photos[currentPhotoIndex3];
+      photo3.children[1].innerHTML = descriptions[currentPhotoIndex3];
+      photo3.children[2].innerHTML = adresses[currentPhotoIndex3];
+      photo3.children[3].innerHTML = prices[currentPhotoIndex3];
 
-    check_addres();
+      check_addres();
+      remove_class('animate', test);
+    }, delay);
   };
 
   function open_build() {
@@ -105,6 +114,18 @@ document.addEventListener('DOMContentLoaded', function () {
         sliders[i].setAttribute('style', 'default: pointer;');
         sliders[i].removeEventListener('click', open_build, false);
       }
+    }
+  }
+
+  function add_class(class_name, items) {
+    for (var i = 0; i < items.length; i++) {
+      items[i].classList.add(class_name);
+    }
+  }
+
+  function remove_class(class_name, items) {
+    for (var i = 0; i < items.length; i++) {
+      items[i].classList.remove(class_name);
     }
   }
 });

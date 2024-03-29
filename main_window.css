@@ -158,6 +158,40 @@ h2 {
   margin-bottom: 6px;
 }
 
+.animate {
+  animation: fade 3.5s ease-in;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100px;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    left: 300px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+
 .slider {
   display: flex;
   justify-content: space-around;
@@ -179,7 +213,7 @@ h2 {
 
 .elem-slider img {
   width: 100%;
-  height: 100%;
+  height: 75%;
 }
 
 .adress,
@@ -210,7 +244,6 @@ h2 {
   display: flex;
   height: 50%;
   width: 100%;
-  overflow-x: hidden;
 }
 
 #news-img {
