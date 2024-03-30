@@ -118,7 +118,7 @@ hr {
 h2 {
   color: #000000;
   font-size: 3rem;
-  padding-top: 3%;
+  padding-top: 2%;
 }
 
 .content-containe-third {
@@ -200,12 +200,20 @@ h2 {
 }
 
 .nav-arrow {
-  margin: 0 0 5% 0;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
 }
 
 .elem-slider {
+  height: 60vh;
   width: 30%;
   border: 2px solid #000;
   margin: 0 2%;
@@ -226,7 +234,7 @@ h2 {
 }
 
 .price {
-  padding: 3%;
+  padding: 0 0 3% 3%;
   font-weight: bold;
   font-size: 2rem;
 }
@@ -242,13 +250,13 @@ h2 {
 
 .news-section {
   display: flex;
-  height: 50%;
-  width: 100%;
+  height: 50vh;
+  width: 180vh;
 }
 
 #news-img {
-  height: 33vh;
-  width: 50vh;
+  width: 40%;
+  height: 100%;
 }
 
 .news-content h3 {
@@ -263,19 +271,27 @@ h2 {
   width: 50%;
 }
 
+.news-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .news-footer {
   display: flex;
   justify-content: space-between;
+  align-items: end;
   width: 65%;
 }
 
 #more-btn {
-  margin: 4% 0 0 0;
+  margin: 0;
 }
 
 #date-news {
-  padding: 10% 0 5% 8%;
+  padding: 0 0 0 8%;
   color: #505050;
+  margin-bottom: 0;
 }
 
 #right-arrow-news {
