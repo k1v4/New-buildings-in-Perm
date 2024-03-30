@@ -1,6 +1,14 @@
 body {
-  font-family: Montserrat;
   width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+div {
+  font-family: Montserrat;
 }
 
 .container {
@@ -174,24 +182,6 @@ h2 {
   }
 }
 
-@keyframes slideLeft {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: -100px;
-  }
-}
-
-@keyframes slideRight {
-  0% {
-    left: 300px;
-  }
-  100% {
-    left: 200px;
-  }
-}
-
 .slider {
   display: flex;
   justify-content: space-around;
@@ -205,7 +195,7 @@ h2 {
   justify-content: center;
 }
 
-.carousel-controls {
+#news-carusel .carousel-controls {
   position: absolute;
   top: 50%;
   right: 0;
@@ -213,7 +203,7 @@ h2 {
 }
 
 .elem-slider {
-  height: 60vh;
+  height: 65vh;
   width: 30%;
   border: 2px solid #000;
   margin: 0 2%;
@@ -246,6 +236,7 @@ h2 {
 
 .fifth-part {
   height: 65vh;
+  margin-bottom: 11vh;
 }
 
 .news-section {
@@ -340,12 +331,17 @@ footer h1 {
 }
 
 .header-feedback h2 {
-  padding-top: 0;
+  padding-bottom: 5vh;
+}
+
+.carousel-controls {
+  position: relative;
+  padding-bottom: 5vh;
 }
 
 .slider-feedback {
   display: grid;
-  grid-template-columns: repeat(3, 60vh);
+  grid-template-columns: repeat(3, 56vh);
   grid-template-rows: repeat(2, 40vh);
   grid-gap: 1vh;
   overflow-x: hidden;

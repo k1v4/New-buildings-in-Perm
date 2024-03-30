@@ -30,7 +30,7 @@
       <div class="first_part">
         <header class="main-header">
           <h1>
-            <a href="mainPage.html">Новостройки<br />Перми</a>
+            <a href="index.html">Новостройки<br />Перми</a>
           </h1>
           <div class="phone-number">+7-(342)-204-38-31</div>
           <button class="first-part-btn" onclick="">Позвоните мне</button>
@@ -141,95 +141,292 @@
           <div class="header-feedback">
             <h2>Отзывы наших клиентов</h2>
             <div class="nav-arrow">
-              <input type="image" src="images/slide left.png" id="left-arrow" />
-              <input
-                type="image"
-                src="images/slide right.png"
-                id="right-arrow"
-              />
+              <div
+                class="nav-arrow carousel-controls d-flex justify-content-end"
+              >
+                <input
+                  type="image"
+                  src="images/slide left.png"
+                  id="left-arrow"
+                  data-bs-target="#feedback-carousel"
+                  data-bs-slide="prev"
+                />
+                <input
+                  type="image"
+                  src="images/slide right.png"
+                  id="right-arrow"
+                  data-bs-target="#feedback-carousel"
+                  data-bs-slide="next"
+                />
+              </div>
             </div>
           </div>
-          <div class="slider-feedback">
-            <div class="feedback-elem">
-              <div class="feedback-elem-header">
-                <img
-                  class="profile-photo"
-                  src="images/alex-photo-profile.png"
-                />
-                <h4 class="profile-name">Александр</h4>
+          <div
+            id="feedback-carousel"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="slider-feedback">
+                  <div class="feedback-elem">
+                    <div class="feedback-elem-header">
+                      <img
+                        class="profile-photo"
+                        src="images/alex-photo-profile.png"
+                      />
+                      <h4 class="profile-name">Александр</h4>
+                    </div>
+                    <div class="feedback-text">
+                      “Благодаря профессионализму и опыту команды новостроек в
+                      Перми, мы без проблем реализовали все наши желания по
+                      дизайну и отделке нашего дома.”
+                    </div>
+                  </div>
+                  <div class="feedback-elem">
+                    <div class="feedback-elem-header">
+                      <img
+                        class="profile-photo"
+                        src="images/irina-photo-profile.png"
+                      />
+                      <h4 class="profile-name">Ирина</h4>
+                    </div>
+                    <div class="feedback-text">
+                      "Очень внимательные и отзывчивые сотрудники. Они всегда
+                      готовы ответить на все наши вопросы и помочь с решением
+                      любых проблем."
+                    </div>
+                  </div>
+                  <div class="feedback-elem">
+                    <div class="feedback-elem-header">
+                      <img
+                        class="profile-photo"
+                        src="images/nasty-photo-profile.png"
+                      />
+                      <h4 class="profile-name">Анастасия</h4>
+                    </div>
+                    <div class="feedback-text">
+                      "Компания действительно профессиональна в своем деле. Они
+                      предоставляют качественный и надежный сервис по
+                      строительству новостроек в Перми."
+                    </div>
+                  </div>
+                  <div class="feedback-elem">
+                    <div class="feedback-elem-header">
+                      <img
+                        class="profile-photo"
+                        src="images/evgeniy-photo-profile.png"
+                      />
+                      <h4 class="profile-name">Евгений</h4>
+                    </div>
+                    <div class="feedback-text">
+                      "Компания активно использует новые технологии в
+                      строительстве. Это позволяет им создавать современные и
+                      энергоэффективные дома."
+                    </div>
+                  </div>
+                  <div class="feedback-elem">
+                    <div class="feedback-elem-header">
+                      <img
+                        class="profile-photo"
+                        src="images/sergey-photo-profile.png"
+                      />
+                      <h4 class="profile-name">Сергей</h4>
+                    </div>
+                    <div class="feedback-text">
+                      "Очень доволен сроками выполнения работ. Наш дом был
+                      построен в оговоренные сроки, что очень впечатлило нас."
+                    </div>
+                  </div>
+                  <div class="feedback-elem">
+                    <div class="feedback-elem-header">
+                      <img
+                        class="profile-photo"
+                        src="images/michael-photo-profile.png"
+                      />
+                      <h4 class="profile-name">Михаил</h4>
+                    </div>
+                    <div class="feedback-text">
+                      "Полное соблюдение всех строительных норм и требований
+                      безопасности. Это дает уверенность в надежности и качестве
+                      построенного дома."
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="feedback-text">
-                “Благодаря профессионализму и опыту команды новостроек в Перми,
-                мы без проблем реализовали все наши желания по дизайну и отделке
-                нашего дома.”
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="slider-feedback">
+                  <div class="feedback-elem">
+                    <div class="feedback-elem-header">
+                      <img
+                        class="profile-photo"
+                        src="images/alex-photo-profile.png"
+                      />
+                      <h4 class="profile-name">Александр</h4>
+                    </div>
+                    <div class="feedback-text">
+                      “Благодаря профессионализму и опыту команды новостроек в
+                      Перми, мы без проблем реализовали все наши желания по
+                      дизайну и отделке нашего дома.”
+                    </div>
+                  </div>
+                  <div class="feedback-elem">
+                    <div class="feedback-elem-header">
+                      <img
+                        class="profile-photo"
+                        src="images/irina-photo-profile.png"
+                      />
+                      <h4 class="profile-name">Ирина</h4>
+                    </div>
+                    <div class="feedback-text">
+                      "Очень внимательные и отзывчивые сотрудники. Они всегда
+                      готовы ответить на все наши вопросы и помочь с решением
+                      любых проблем."
+                    </div>
+                  </div>
+                  <div class="feedback-elem">
+                    <div class="feedback-elem-header">
+                      <img
+                        class="profile-photo"
+                        src="images/nasty-photo-profile.png"
+                      />
+                      <h4 class="profile-name">Анастасия</h4>
+                    </div>
+                    <div class="feedback-text">
+                      "Компания действительно профессиональна в своем деле. Они
+                      предоставляют качественный и надежный сервис по
+                      строительству новостроек в Перми."
+                    </div>
+                  </div>
+                  <div class="feedback-elem">
+                    <div class="feedback-elem-header">
+                      <img
+                        class="profile-photo"
+                        src="images/evgeniy-photo-profile.png"
+                      />
+                      <h4 class="profile-name">Евгений</h4>
+                    </div>
+                    <div class="feedback-text">
+                      "Компания активно использует новые технологии в
+                      строительстве. Это позволяет им создавать современные и
+                      энергоэффективные дома."
+                    </div>
+                  </div>
+                  <div class="feedback-elem">
+                    <div class="feedback-elem-header">
+                      <img
+                        class="profile-photo"
+                        src="images/sergey-photo-profile.png"
+                      />
+                      <h4 class="profile-name">Сергей</h4>
+                    </div>
+                    <div class="feedback-text">
+                      "Очень доволен сроками выполнения работ. Наш дом был
+                      построен в оговоренные сроки, что очень впечатлило нас."
+                    </div>
+                  </div>
+                  <div class="feedback-elem">
+                    <div class="feedback-elem-header">
+                      <img
+                        class="profile-photo"
+                        src="images/michael-photo-profile.png"
+                      />
+                      <h4 class="profile-name">Михаил</h4>
+                    </div>
+                    <div class="feedback-text">
+                      "Полное соблюдение всех строительных норм и требований
+                      безопасности. Это дает уверенность в надежности и качестве
+                      построенного дома."
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="feedback-elem">
-              <div class="feedback-elem-header">
-                <img
-                  class="profile-photo"
-                  src="images/irina-photo-profile.png"
-                />
-                <h4 class="profile-name">Ирина</h4>
-              </div>
-              <div class="feedback-text">
-                "Очень внимательные и отзывчивые сотрудники. Они всегда готовы
-                ответить на все наши вопросы и помочь с решением любых проблем."
-              </div>
-            </div>
-            <div class="feedback-elem">
-              <div class="feedback-elem-header">
-                <img
-                  class="profile-photo"
-                  src="images/nasty-photo-profile.png"
-                />
-                <h4 class="profile-name">Анастасия</h4>
-              </div>
-              <div class="feedback-text">
-                "Компания действительно профессиональна в своем деле. Они
-                предоставляют качественный и надежный сервис по строительству
-                новостроек в Перми."
-              </div>
-            </div>
-            <div class="feedback-elem">
-              <div class="feedback-elem-header">
-                <img
-                  class="profile-photo"
-                  src="images/evgeniy-photo-profile.png"
-                />
-                <h4 class="profile-name">Евгений</h4>
-              </div>
-              <div class="feedback-text">
-                "Компания активно использует новые технологии в строительстве.
-                Это позволяет им создавать современные и энергоэффективные
-                дома."
-              </div>
-            </div>
-            <div class="feedback-elem">
-              <div class="feedback-elem-header">
-                <img
-                  class="profile-photo"
-                  src="images/sergey-photo-profile.png"
-                />
-                <h4 class="profile-name">Сергей</h4>
-              </div>
-              <div class="feedback-text">
-                "Очень доволен сроками выполнения работ. Наш дом был построен в
-                оговоренные сроки, что очень впечатлило нас."
-              </div>
-            </div>
-            <div class="feedback-elem">
-              <div class="feedback-elem-header">
-                <img
-                  class="profile-photo"
-                  src="images/michael-photo-profile.png"
-                />
-                <h4 class="profile-name">Михаил</h4>
-              </div>
-              <div class="feedback-text">
-                "Полное соблюдение всех строительных норм и требований
-                безопасности. Это дает уверенность в надежности и качестве
-                построенного дома."
+              <div class="carousel-item">
+                <div class="slider-feedback">
+                  <div class="feedback-elem">
+                    <div class="feedback-elem-header">
+                      <img
+                        class="profile-photo"
+                        src="images/alex-photo-profile.png"
+                      />
+                      <h4 class="profile-name">Александр</h4>
+                    </div>
+                    <div class="feedback-text">
+                      “Благодаря профессионализму и опыту команды новостроек в
+                      Перми, мы без проблем реализовали все наши желания по
+                      дизайну и отделке нашего дома.”
+                    </div>
+                  </div>
+                  <div class="feedback-elem">
+                    <div class="feedback-elem-header">
+                      <img
+                        class="profile-photo"
+                        src="images/irina-photo-profile.png"
+                      />
+                      <h4 class="profile-name">Ирина</h4>
+                    </div>
+                    <div class="feedback-text">
+                      "Очень внимательные и отзывчивые сотрудники. Они всегда
+                      готовы ответить на все наши вопросы и помочь с решением
+                      любых проблем."
+                    </div>
+                  </div>
+                  <div class="feedback-elem">
+                    <div class="feedback-elem-header">
+                      <img
+                        class="profile-photo"
+                        src="images/nasty-photo-profile.png"
+                      />
+                      <h4 class="profile-name">Анастасия</h4>
+                    </div>
+                    <div class="feedback-text">
+                      "Компания действительно профессиональна в своем деле. Они
+                      предоставляют качественный и надежный сервис по
+                      строительству новостроек в Перми."
+                    </div>
+                  </div>
+                  <div class="feedback-elem">
+                    <div class="feedback-elem-header">
+                      <img
+                        class="profile-photo"
+                        src="images/evgeniy-photo-profile.png"
+                      />
+                      <h4 class="profile-name">Евгений</h4>
+                    </div>
+                    <div class="feedback-text">
+                      "Компания активно использует новые технологии в
+                      строительстве. Это позволяет им создавать современные и
+                      энергоэффективные дома."
+                    </div>
+                  </div>
+                  <div class="feedback-elem">
+                    <div class="feedback-elem-header">
+                      <img
+                        class="profile-photo"
+                        src="images/sergey-photo-profile.png"
+                      />
+                      <h4 class="profile-name">Сергей</h4>
+                    </div>
+                    <div class="feedback-text">
+                      "Очень доволен сроками выполнения работ. Наш дом был
+                      построен в оговоренные сроки, что очень впечатлило нас."
+                    </div>
+                  </div>
+                  <div class="feedback-elem">
+                    <div class="feedback-elem-header">
+                      <img
+                        class="profile-photo"
+                        src="images/michael-photo-profile.png"
+                      />
+                      <h4 class="profile-name">Михаил</h4>
+                    </div>
+                    <div class="feedback-text">
+                      "Полное соблюдение всех строительных норм и требований
+                      безопасности. Это дает уверенность в надежности и качестве
+                      построенного дома."
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -240,7 +437,7 @@
         <div class="dream-apartment">
           <h2>Новости</h2>
         </div>
-        <div id="carouselExample" class="carousel carousel-dark slide">
+        <div id="news-carusel" class="carousel carousel-dark slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="news-section">
@@ -264,7 +461,8 @@
                 <div class="news-content">
                   <h3>Заложен фундамент на ул.Революции, 52</h3>
                   <p id="text-news">
-                    В комплекс на ул.Революции, 52 закончены работы связанные с фундаментом.
+                    В комплекс на ул.Революции, 52 закончены работы связанные с
+                    фундаментом.
                   </p>
                   <div class="news-footer">
                     <p id="date-news">22.02.2024</p>
@@ -296,20 +494,20 @@
                 type="image"
                 src="images/slide left.png"
                 id="left-arrow-news"
-                data-bs-target="#carouselExample"
+                data-bs-target="#news-carusel"
                 data-bs-slide="next"
               />
               <input
                 type="image"
                 src="images/slide right.png"
                 id="right-arrow-news"
-                data-bs-target="#carouselExample"
+                data-bs-target="#news-carusel"
                 data-bs-slide="prev"
               />
             </div>
+          </div>
         </div>
       </div>
-
       <hr />
       <footer>
         <h1>
