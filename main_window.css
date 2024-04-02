@@ -64,6 +64,14 @@ hr {
   margin-right: -15vh;
 }
 
+#phone-number-quest {
+  margin-left: 15vh;
+  margin-right: 15vh;
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
 .nav-bar {
   width: 85%;
   margin: auto;
